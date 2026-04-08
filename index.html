@@ -1,0 +1,199 @@
+<script defer>
+    document.addEventListener('DOMContentLoaded', () => {
+        // Select all anchor tags inside the navigation menu
+        const menuLinks = document.querySelectorAll('.navigation-items a');
+        const menuCheckbox = document.getElementById('menuCheck');
+
+        menuLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                // Uncheck the checkbox to trigger the CSS transition that hides the menu
+                if (menuCheckbox) {
+                    menuCheckbox.checked = false;
+                }
+            });
+        });
+    });
+</script>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menece Talent LLC | Lumper Services</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+
+
+<body>
+    <header class="navigation-header">
+        <nav>
+            <div class="logo-container">
+                <a href="#">
+                    <span class="logo-placeholder" aria-hidden="true">LOGO</span>
+                    <span>Menece Talent LLC</span>
+                </a>
+            </div>
+            <div class="hamburger">
+                <input type="checkbox" id="menuCheck" />
+                <span></span>
+                <span></span>
+                <span></span>
+                <label for="menuCheck" class="menu-overlay"></label>
+            </div>
+            <div class="navigation-items" id="navigation-items">
+                <a href="#services">Services</a>
+                <a href="#company">Company</a>
+                <a href="#benefits">Benefits</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container hero-grid">
+                <div class="hero-copy">
+                    <p class="eyebrow">Lumper Services</p>
+                    <h1>Professional Lumper Services & Logistics Support</h1>
+                    <p class="hero-text">
+                        Menece Talent LLC delivers professional lumper services, warehouse assistance, labor
+                        coordination, and logistics support for transportation and distribution operations.
+                    </p>
+                    <div class="hero-actions">
+                        <a class="btn btn-primary" href="#contact">Request a quote</a>
+                        <a class="btn btn-secondary" href="#services">View services</a>
+                    </div>
+                </div>
+                <div class="hero-side">
+                    <div class="image-placeholder">Image Placeholder</div>
+                </div>
+            </div>
+        </section>
+
+        <section id="services" class="section services">
+            <div class="container section-header">
+                <span class="section-pretitle">Strategic services</span>
+                <h2>Lumper and logistics services for every stage of your operation</h2>
+                <p>
+                    Integrated solutions designed to support the movement of goods with precision, safety and
+                    reliability.
+                </p>
+            </div>
+            <div class="services-grid container">
+                <article class="service-card">
+                    <h3>Loading and unloading</h3>
+                    <p>Experienced teams handling loading and unloading with speed and operational safety to reduce wait
+                        time.</p>
+                </article>
+                <article class="service-card">
+                    <h3>Warehouse support</h3>
+                    <p>Temporary storage assistance, inventory organization and goods control for distribution centers
+                        and industrial facilities.</p>
+                </article>
+                <article class="service-card">
+                    <h3>Labor coordination</h3>
+                    <p>Team management that ensures every shipment receives the right personnel at the right time.</p>
+                </article>
+                <article class="service-card">
+                    <h3>Logistics assistance</h3>
+                    <p>Support for route planning, load scheduling and communication with partners to keep your supply
+                        chain moving.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="company" class="section company-overview">
+            <div class="container company-grid">
+                <div class="company-copy">
+                    <span class="section-pretitle">Who we are</span>
+                    <h2>A domestic limited liability company focused on operational excellence</h2>
+                    <p>
+                        Menece Talent LLC is a domestic limited liability company specializing in lumper services. Our
+                        commitment is to keep your operations moving with professional oversight and fast response.
+                    </p>
+                    <div class="company-panel">
+                        <div class="panel-card">
+                            <p class="panel-label">Company type</p>
+                            <h2>Domestic Limited Liability Company</h2>
+                            <p class="panel-text">
+                                We operate as a company dedicated to safe, reliable logistics support and on-site labor
+                                coordination.
+                            </p>
+                            <ul class="panel-list">
+                                <li>Loading and unloading</li>
+                                <li>Warehouse support</li>
+                                <li>Labor coordination</li>
+                                <li>Logistics support</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="company-visual">
+                    <div class="image-placeholder">Image Placeholder</div>
+                </div>
+            </div>
+        </section>
+
+        <section id="benefits" class="section benefits">
+            <div class="container section-header">
+                <span class="section-pretitle">Corporate advantages</span>
+                <h2>Why choose Menece Talent LLC</h2>
+                <p>
+                    We align our services with your operational goals to save time, improve safety and increase control
+                    across every shipment.
+                </p>
+            </div>
+            <div class="container benefits-visual">
+                <div class="image-placeholder image-placeholder-wide">Image Placeholder</div>
+            </div>
+            <div class="benefits-grid container">
+                <article class="benefit-card">
+                    <h3>Reduced turnaround time</h3>
+                    <p>Processes designed to minimize delays at docks and warehouses.</p>
+                </article>
+                <article class="benefit-card">
+                    <h3>Operational safety</h3>
+                    <p>Quality controls and preventive measures in every support service.</p>
+                </article>
+                <article class="benefit-card">
+                    <h3>Clear communication</h3>
+                    <p>Consistent coordination between your team and our field specialists.</p>
+                </article>
+                <article class="benefit-card">
+                    <h3>Reliable response</h3>
+                    <p>Adaptable support for changing load requirements and operational needs.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="contact" class="section contact-section">
+            <div class="container contact-card">
+                <div>
+                    <span class="section-pretitle">Contact us</span>
+                    <h2>Speak with our logistics team</h2>
+                    <p>We are ready to assess your lumper service needs and deliver a plan tailored to your operation.
+                    </p>
+                </div>
+                <div class="contact-details">
+                    <a href="tel:+1234567890" class="contact-link">Phone: +1 (234) 567-890</a>
+                    <a href="mailto:info@menece-talent.com" class="contact-link">Email: info@menece-talent.com</a>
+                    <p class="contact-note">Available for loading and unloading services at transportation and logistics
+                        facilities.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <p>© 2026 Menece Talent LLC. All rights reserved.</p>
+            <p>Domestic Limited Liability Company | Lumper and logistics services.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
