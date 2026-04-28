@@ -98,6 +98,12 @@ body {
 img,
 svg {
   max-width: 100%;
+  height: auto;
+}
+
+.site-logo {
+  height: 50px;
+  width: auto;
 }
 
 a {
